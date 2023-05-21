@@ -1,3 +1,6 @@
 #!/bin/bash
-cd carmen/target/debug
+cd carmen/src
+cargo build
+cd ..
+cd target/debug
 ./run.sh
