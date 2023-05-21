@@ -2,6 +2,7 @@ use std::io;
 
 pub fn main() {
     println!("Welcome to Carmen Scrachiageo in Rust");
+    println!("This isn't your ordinary version of Carmen...\nIn this version, it is a trivia like game");
     let q = ["Question 1:\nWhat place is known as the city of love?\n 1. Germany\n 2. France\n 3. Russia\n 4. New York\n Please type your answer:","Question 2:\nWhat place was Nintendo Founded?\n 1. Japan\n 2. China\n 3. Korea\n 4. Hong Kong\n Please type your answer:"];
     let a = [2, 1];
 
@@ -17,7 +18,8 @@ pub fn main() {
         if h == a[i] {
             println!("Correct! Let's move on");
         } else {
-            println!("Incorrect!");
+            println!("Incorrect! We lost her! ");
+            break;
         }
     }
 }
